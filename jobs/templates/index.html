@@ -1,0 +1,80 @@
+{% extends "header.html" %}
+{% block title %}Fresher Hub{% endblock %}
+{% load static %}
+
+{% block body %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<span style="background-color: red;"><br><br>
+
+<form  id="frm" action="custom" class="container form-group" method="POST" type="submit"    >
+        <div  id="card1" class=" card">
+
+    <div id="tool" class="tool">
+
+        {% csrf_token %}
+       
+    <input id="sbox" class="form-control opt" type="text" name="searchkey" placeholder="Search for Job Profiles , Locations or Skills" autofocus > 
+    
+<button id="sbtn" type="submit" class="form-control opt1 ">Search</button>
+
+
+</div>
+</div>
+
+</form>
+
+
+</span>
+<br><br>  
+<div id="scrol">
+        
+{% for job in data%}
+
+
+<div  class="container card ">
+   
+    <div id="jobtitle" class="jobtitle">
+            
+        <h5   id="jobval"> <a href="{{job.contact}}">  {{job.position}}</a> </h5>
+    </div>
+    
+    <ul class="list-group">
+        <li class="list-inline">
+            <h6 class="titl">Experience: </h6>
+            <h6 class="prop"> {{job.experience}} years</h6>
+        </li>
+        <li class="list-inline">
+            <h6 class="titl"> Location: </h6>
+            <h6 class="prop">{{job.location}}</h6>
+        </li>
+        <li class="list-inline">
+            <h6 class="titl">Skills: </h6>
+            <h6 class="prop">{{job.skills}}</h6>
+        </li>
+        <li class="list-inline">
+            <h6 class="titl">Company: </h6>
+            <h6 class="prop">{{job.company}}</h6>
+        </li>
+        <li class="list-inline">
+            <h6 class="titl">Apply At:</h6>
+           <h6  id="link" class="prop"><a href="{{job.contact}}">{{job.contact}}</a></h6>
+        </li>
+        <li class="list-inline">
+            <h6 class="titl">Post Date: </h6>
+            <h6 class="prop">{{job.postdate}}</h6>
+        </li>
+    </ul>
+    
+
+</div>
+    
+{% endfor %}
+<br>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+<script src="{% static 'js/index.js' %}"></script>
+{% endblock %}

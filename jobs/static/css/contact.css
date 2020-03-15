@@ -1,0 +1,13 @@
+.formcontent{
+   margin-left: 10%;
+   float: inline-start;
+}
+
+#inputs{
+    margin-left: 10%;
+    float: inline-end;
+}
+
+#formc{
+    background-color:   #D3D3D3;
+}

@@ -1,0 +1,17 @@
+{% extends "header.html" %}
+{% block title %}Contact Us {% endblock %}
+{% block body %}
+{% load static %}
+<br><br><br><br><br><br>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+
+<form id="formc" type="submit" method="POST" action="contact">
+<div class="formcontent">
+  <div><label id="labels">Name:</label><input id="inputs"              type="text"></div><br>
+  <div><label id="labels">Email:</label><input id="inputs"  type="text"></div><br>
+  <div><label id="labels">Description: </label><textarea id="inputs"  type="text"></textarea></div>
+</div>
+</form>
+
+{% endblock %}

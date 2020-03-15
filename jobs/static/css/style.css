@@ -1,0 +1,214 @@
+.titl{
+    float:inline-start;
+    color:black;
+    margin-left: 10%;
+    padding:0px;
+    
+    
+}
+
+
+.prop{
+    float: right;
+    padding:0px;
+    margin-right: 50px;
+    color: black    ;
+
+}
+
+.jobtitle{
+    
+    color:red;
+    margin-left: 55px;
+    padding:-10px;
+    margin-top:3px;
+}
+
+.card{
+    margin-top: 7px;
+   
+    float: center;
+    width: 70%;
+    padding: -60px;
+    background:white; 
+    border-block-color:black;
+    border-block-width: 0px;
+    
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    
+    
+    border-left-color:  rgb(80, 155, 199);
+    border-right-width: 0px;
+    border-left-width: 20px;
+
+}
+.card:hover{
+    transform: scale(1.03);
+    transition-duration: 500ms;
+
+    
+    /* border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px; */
+    border-left-color:  rgb(15, 79, 116);
+    
+}
+
+.form-control{
+    width: 100px;
+   margin-left: 15%;
+   
+   margin-top: 1%;
+}
+
+
+
+.opt{
+    float: inline-start;;
+    width: 200px;
+    
+}
+
+.opt1{
+    text-align: center;
+    text-align: center;
+    width: 200px;
+    float:inline-start;
+    margin-left: 28%;
+
+    
+    
+}
+
+#sbox{
+    float: inline-start;
+    background-color: white;
+    color: black;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    width: 80%;
+    border-left-width: 10px;
+    margin-left: 0% ;
+    height: 9%;
+    height: 40px;
+    align-self: center;
+    border-left-width: 3px;
+    text-align: center;
+    min-width:100px;
+
+}
+
+#sbox:hover{
+
+}
+#select{
+    float: center;
+    width: 20%;
+    padding: 5px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    height: 5%;
+    margin-left: 15%;
+    margin-top: 12px;
+}
+.tool{
+    margin-top: 0px;
+    margin-left: 22%;
+    width: 60%;
+}
+
+#sbtn{
+    color: white;
+    background:rgb(39, 115, 158);
+    margin-left:3%;
+    width: 13%;
+    padding: 5px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+    height: 40px;   
+    min-width:100px;
+    
+   
+    
+    
+    border-left-width: 3px;
+
+}
+#sbtn:hover{
+    transform: scale(1.09);
+    background: rgb(15, 79, 116);
+}
+#sbox:hover{
+    transform: scale(1.005);
+}
+
+#ctbox{
+
+    width: 12%;
+    margin-left: 35%;
+}
+
+#frm{
+    background-color:   #D3D3D3;
+    color:  #D3D3D3;
+   margin-left: 18%;
+   z-index: 2;
+   
+  
+    
+}
+
+
+a:link { color: rgb(66,103,178) }
+html {background-color: #D3D3D3;
+
+    overflow-x:scroll;
+}
+body {background-color: #D3D3D3;
+    
+    min-width:200px;
+}
+
+
+
+
+
+#nav{
+     
+        color: rgb(66,103,178) ;
+        background-color: rgb(32, 76, 163)
+    
+    }
+
+#card1{
+    
+    background-color: #D3D3D3;
+    border-left-color: #D3D3D3;
+    margin-left:-20%;
+    position: fixed;
+    z-index: 2;
+    height: 60px;
+    width: 100%;
+    margin-top: -5px;
+    
+}
+
+
+#navlist{
+    color: white;
+}
+#navlist:hover{
+    transform: scale(1.1);
+}
+
+
+.navbar{
+    position: fixed;
+    z-index: 3; 
+    width: 100%;
+}
+
